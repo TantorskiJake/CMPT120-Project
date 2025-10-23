@@ -9,10 +9,10 @@ No installation required!
 import sys
 import os
 
-# Add the src directory to the Python path
+# Add the project root directory to the Python path
 current_dir = os.path.dirname(os.path.abspath(__file__))
-src_dir = os.path.join(current_dir, 'src')
-sys.path.insert(0, src_dir)
+project_root = os.path.dirname(current_dir)
+sys.path.insert(0, project_root)
 
 # Import and run the main function
 if __name__ == "__main__":
